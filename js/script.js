@@ -9,7 +9,7 @@ inputKC.addEventListener('input', ()=>{
     request.setRequestHeader('Content-type','application/json; charset=utf-8');
     request.send(); 
 
-    request.addEventListener('load',()=>{
+    request.addEventListener('load', () =>{
         if(request.status === 200 ) {
             const data = JSON.parse(request.response);
             inputUSD.value = (+inputKC.value / data.current.usd).toFixed(2);
