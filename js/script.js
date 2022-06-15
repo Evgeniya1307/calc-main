@@ -3,7 +3,7 @@
 const   inputKC = document.querySelector("#kc"),
         inputUSD = document.querySelector("#usd");
 
-inputKC.addEventListener('input', ()=>{
+inputKC.addEventListener("input", ()=>{
     const request = new XMLHttpRequest();
     request.open('GET','js/current.json');
     request.setRequestHeader('Content-type','application/json; charset=utf-8');
